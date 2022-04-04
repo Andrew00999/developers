@@ -35,6 +35,9 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  overflow-x: hidden;
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
@@ -75,4 +78,239 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+
+/* first(header) block */
+.container {
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+}
+.header {
+  width: 100%;
+  height: auto;
+}
+.top_line {
+  padding: 20px 0;
+  background-color: #67AEFC;
+}
+.top_line_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top_line_nav {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 240px;
+}
+.logo img {
+  width: 100%;
+  height: auto;
+}
+.header_list {
+  display: flex;
+}
+.header_list li {
+  margin-right: 35px;
+}
+.header_list li:last-child {
+  margin: 0;
+}
+.header_list li a {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.header_btn {
+  padding: 10px 42px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  background-color: #75E169;
+  margin-left: 30px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  
+  transition: .3s;
+}
+.header_btn:hover {
+  border: 2px solid #fff;
+}
+.header_btn:active {
+  background-color: #fff;
+  color: #67AEFC;
+}
+
+
+/* header content */
+.header_content_wrap {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.header_content_wrap::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 610px;
+  height: 550px;
+  top: 50%;
+  transform: translateY(-60%);
+  right: -10%;
+  background: url("../img/oval.png") no-repeat center;
+  background-size: contain;
+  z-index: -1;
+}
+.header_little_oval {
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+}
+.header_wave {
+  position: absolute;
+  bottom: 100px;
+  left: 65px;
+}
+.header_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+.content_text {
+  width: 50%;
+  height: auto;
+  position: relative;
+  display: inline-block;
+}
+.content_text::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  top: -20px;
+  left: -100px;
+  width: 55px;
+  height: 55px;
+  background: url('../img/ball.png') no-repeat center;
+  z-index: 1;
+}
+.content_text h1 {
+  color: #484848;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+}
+.content_text p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+  margin: 20px 0 60px;
+}
+.content_btn {
+  border-radius: 5px;
+  border: 2px solid transparent;
+  background-color: #75E169;
+  padding: 23px 92px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 100%;  
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: .3s;
+
+  color: #FFFFFF;
+}
+.content_btn:hover {
+  border: 2px solid #67AEFC;
+}
+.content_btn:active {
+  background-color: #67AEFC;
+  color: #fff;
+}
+.content_img {
+  width: 50%;
+  height: auto;
+  position: relative;
+}
+.content_img::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: -50px;
+  left: 40%;
+  transform: translateX(-60%);
+  width: 120px;
+  height: 60px;
+  background: url('../img/stick.png') no-repeat center;
+  background-size: cover;
+  z-index: 1;
+}
+.content_img img {
+  width: 100%;
+}
+.content_wrap {
+  display: flex;
+}
+
+
+/* create design */
+.create {
+  background-color: #DAECFF;
+  padding: 120px 0;
+}
+/* .create_content {
+} */
+.create_content h1 {
+  text-align: center;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 28px;
+  color: #111111;
+}
+.create_func {
+  margin-top: 90px;
+}
+.func_element {
+  background-color: #fff;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px 15px 95px;
+  margin-bottom: 10px;
+}
+.func_element span {
+  position: relative;
+  display: block;
+}
+.func_element span::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 24px;
+  height: 24px;
+  background-color: #75E169;
+  border-radius: 50%;
+}
+.func_arrow {
+  cursor: pointer;
 }
