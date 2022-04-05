@@ -80,6 +80,14 @@ select {
   }
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #6D79EF;
+  border-radius: 4px;
+}
+
 
 /* first(header) block */
 .container {
@@ -276,8 +284,21 @@ select {
   background-color: #DAECFF;
   padding: 120px 0;
 }
-/* .create_content {
-} */
+.create_content {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.create_content::after {
+  content: '';
+  position: absolute;
+  bottom: -70px;
+  right: -200px;
+  width: 150px;
+  height: 150px;
+  background: url('../img/bag.png') no-repeat center center;
+  z-index: 1;
+}
 .create_content h1 {
   text-align: center;
   font-style: normal;
@@ -296,6 +317,7 @@ select {
   justify-content: space-between;
   padding: 15px 40px 15px 95px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 .func_element span {
   position: relative;
@@ -313,4 +335,65 @@ select {
 }
 .func_arrow {
   cursor: pointer;
+}
+
+
+.detail_wrap {
+  max-height: 0;
+  overflow: hidden;
+  transition: .3s ease-in-out;
+}
+
+.detail {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 15px 40px 15px 95px; 
+  margin-bottom: 10px;
+}
+.detail_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.detail_title h2 {
+  position: relative;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+}
+.detail_title h2::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -50px;
+  width: 24px;
+  height: 24px;
+  background-color: #67AEFC;
+  border-radius: 50%;
+}
+.func_arrow_rotate {
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+.detail_text {
+  width: 90%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+  padding: 16px 0;
+
+  position: relative;
+}
+.detail_text::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -40px;
+  width: 1px;
+  height: 100%;
+  background-color: #000;
+  z-index: 1;
 }
