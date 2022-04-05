@@ -265,7 +265,6 @@ select {
 }
 .content_img::before {
   content: '';
-  display: inline-block;
   position: absolute;
   top: -50px;
   left: 40%;
@@ -469,6 +468,7 @@ select {
 .slick-arrow {
   position: absolute;
   bottom: -120px;
+  left: 0;
   transform: translateX(-50%);
   border: none;
   z-index: 10;
@@ -510,7 +510,7 @@ select {
   justify-content: space-evenly;
   border: 2px solid #67AEFC;
   border-radius: 14px;
-  width: 100%;
+  width: 40%;
   height: 300px;
   padding: 20px 20px 20px 50px;
 }
@@ -829,4 +829,34 @@ select {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mobile_content_img {
+  display: none;
+}
+.burger_menu {
+  display: none;
+}
+.more_info_img_mobile {
+  display: none;
+}
+.mobile_img {
+  display: none;
+}
+.footer_mobile {
+  display: none;
 }

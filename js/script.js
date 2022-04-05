@@ -14,7 +14,7 @@ document.querySelectorAll('.func_element_top').forEach((el) => {
 
 $(document).ready(function () {
   $('.slider').slick({
-    slidesToShow: 2
+    slidesToShow: 1
   });
 })
 
