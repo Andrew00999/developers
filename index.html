@@ -410,12 +410,12 @@
           <h2>Обсудить проект</h2>
           <p>Расскажите о своих бизнес-целях и мы поможем вам в их достижении</p>
         </div>
-        <form type="submit" class="discuss_fields">
-          <input class="input_name input" type="text" name="name" placeholder="Имя">
-          <input class="input_phone input" type="tel" name="phone" placeholder="Telegram/Viber">
-          <input class="input_email input" type="text" name="email" placeholder="Email">
+        <form class="discuss_fields form" action="" novalidate>
+          <input required class="input_name input" type="text" name="name" placeholder="Имя">
+          <input required class="input_phone input" type="tel" name="phone" placeholder="Telegram/Viber">
+          <input required class="input_email input" type="email" name="email" placeholder="Email">
+          <button class="content_btn" type="submit">Отправить</button>
         </form>
-        <button class="content_btn" type="submit">Отправить</button>
         <div class="mobile_img">
           <img src="img/input_mobile.png" alt="">
         </div>
