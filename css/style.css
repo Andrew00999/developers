@@ -338,7 +338,12 @@ select {
   border-radius: 50%;
 }
 .func_arrow {
+  width: 25px;
+  height: auto;
   cursor: pointer;
+}
+.func_arrow img {
+  width: 100%;
 }
 
 
@@ -510,8 +515,8 @@ select {
   justify-content: space-evenly;
   border: 2px solid #67AEFC;
   border-radius: 14px;
-  width: 40%;
-  height: 300px;
+  width: 100%;
+  height: 350px;
   padding: 20px 20px 20px 50px;
 }
 .slider_content_text {
