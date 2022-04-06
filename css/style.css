@@ -860,3 +860,9 @@ select {
 .footer_mobile {
   display: none;
 }
+.mobile_card_slider {
+  display: none;
+}
+.burger_menu_list {
+  display: none;
+}

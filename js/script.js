@@ -14,9 +14,29 @@ document.querySelectorAll('.func_element_top').forEach((el) => {
 
 $(document).ready(function () {
   $('.slider').slick({
-    slidesToShow: 1
-  });
+    slidesToShow: 2,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
+  }),
+    $('.mobile_card_slider').slick({
+      infinite: false
+    });
 })
 
 
+let burger = document.querySelector('.burger_menu');
+
+if(burger) {
+  const burgerMenu = document.querySelector('.burger_menu_list');
+  burger.addEventListener('click', () => {
+    burgerMenu.classList.toggle('_active');
+    document.body.classList.toggle('_lock')
+  })
+}
 
